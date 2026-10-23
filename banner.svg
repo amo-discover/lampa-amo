@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" fill="none">
+  <defs>
+    <radialGradient id="glow" cx="18%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#FF385D" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#FF385D" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#08080A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D0D11"/>
+      <stop offset="100%" stop-color="#070709"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="1196" height="316" rx="24" fill="url(#card)" stroke="#222228" stroke-width="2"/>
+  <rect x="2" y="2" width="1196" height="316" rx="24" fill="url(#glow)"/>
+
+  <!-- Icon Container -->
+  <g transform="translate(64, 68)">
+    <rect x="0" y="0" width="184" height="184" rx="42" fill="#121217" stroke="#2A2A33" stroke-width="2"/>
+    <g transform="translate(27, 25) scale(0.104)">
+      <path fill="#F7F7F8" d="M603 67 C560 68 526 91 500 136 L32 1054 C16 1085 19 1116 34 1141 C52 1172 84 1187 125 1188 L215 1188 C250 1188 276 1170 291 1139 L493 731 C499 719 501 710 501 697 L501 510 C501 491 512 479 528 476 C540 474 549 478 561 485 L789 620 C800 627 805 638 805 652 L805 784 C805 798 799 808 783 820 L966 1147 C982 1174 1009 1187 1042 1187 L1155 1187 C1191 1187 1217 1169 1226 1139 C1232 1120 1229 1100 1219 1081 L752 137 C729 91 696 70 660 68 C640 67 622 67 603 67 Z"/>
+      <path fill="#FF385D" d="M805 657 L805 787 C805 798 801 806 792 812 L307 1103 L416 886 L788 675 C798 669 805 663 805 657 Z"/>
+    </g>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(284, 0)">
+    <rect x="0" y="66" width="142" height="28" rx="14" fill="#FF385D" fill-opacity="0.14" stroke="#FF385D" stroke-opacity="0.45"/>
+    <text x="71" y="85" text-anchor="middle" fill="#FF385D" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">HELPER UTILITY</text>
+
+    <text x="0" y="142" fill="#F7F7F8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.8">Amo Helper</text>
+    <text x="0" y="180" fill="#A1A1AA" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="500">Smart TV Lampa plugins, server switcher &amp; setup helpers for amo.watch</text>
+
+    <!-- URL Pill -->
+    <rect x="0" y="206" width="520" height="46" rx="10" fill="#131318" stroke="#272730" stroke-width="1.5"/>
+    <circle cx="24" cy="229" r="5" fill="#FF385D"/>
+    <text x="42" y="235" fill="#E4E4E7" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="600">https://app.amo.watch/install_amo.js</text>
+  </g>
+</svg>
