@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amo Helper — Lampa Server Switcher (install_amo.js)</title>
+  <meta name="description" content="Easy one-step Lampa server switcher to app.amo.watch (4K Movies, Series, Live TV & 14 languages). Works on Smart TV, Android TV, Tizen, webOS, Desktop & Browser." />
+  <link rel="icon" type="image/svg+xml" href="./logo.svg" />
+  <style>
+    :root {
+      --bg: #000000;
+      --surface: #111115;
+      --border: #23232B;
+      --text: #F7F7F8;
+      --muted: #A1A1AA;
+      --accent: #FF385D;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at 50% 0%, rgba(255,56,93,0.14), transparent 55%), var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      max-width: 680px;
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 36px;
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.65);
+    }
+    .head {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .head img {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(255, 56, 93, 0.14);
+      border: 1px solid rgba(255, 56, 93, 0.35);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 6px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 26px;
+      letter-spacing: -0.02em;
+    }
+    p {
+      color: var(--muted);
+      line-height: 1.6;
+      margin: 0 0 20px;
+    }
+    .url-box {
+      background: #09090C;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    code {
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 14px;
+      color: var(--text);
+      word-break: break-all;
+    }
+    button {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 9px 16px;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    button:hover { opacity: 0.92; }
+    .links {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 14px;
+    }
+    .links a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    .links a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="head">
+      <img src="./logo.svg" alt="Amo Helper" />
+      <div>
+        <span class="badge">Amo Helper Utility</span>
+        <h1>Amo Server for Lampa</h1>
+      </div>
+    </div>
+    <p>
+      One-step plugin for <strong>Lampa</strong> that switches your Smart TV, Android TV, or desktop Lampa client to <strong>https://app.amo.watch</strong>.
+    </p>
+    <div class="url-box">
+      <code id="primary-url">https://app.amo.watch/install_amo.js</code>
+      <button onclick="navigator.clipboard.writeText('https://app.amo.watch/install_amo.js');this.textContent='Copied!'">Copy URL</button>
+    </div>
+    <div class="url-box">
+      <code id="mirror-url">https://amo-discover.github.io/lampa-amo/install_amo.js</code>
+      <button onclick="navigator.clipboard.writeText('https://amo-discover.github.io/lampa-amo/install_amo.js');this.textContent='Copied!'">Copy Mirror</button>
+    </div>
+    <div class="links">
+      <a href="https://app.amo.watch">Open app.amo.watch &rarr;</a>
+      <a href="https://amo.watch">Catalog (amo.watch)</a>
+      <a href="https://github.com/amo-discover/lampa-amo">GitHub Repository</a>
+    </div>
+  </main>
+</body>
+</html>
