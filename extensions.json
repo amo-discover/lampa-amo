@@ -1,0 +1,17 @@
+{
+  "secuses": true,
+  "results": [
+    {
+      "title": "Магазин Amo Helper",
+      "results": [
+        {
+          "author": "@amo.watch",
+          "link": "https://app.amo.watch/install_amo.js",
+          "Mirror": "https://amo-discover.github.io/lampa-amo/install_amo.js",
+          "version": "1.2.2",
+          "descr": "Быстрая установка и переключение сервера Lampa на app.amo.watch (Фильмы 4K, Сериалы, ТВ, 14 языков). Работает на Smart TV, Android TV, Tizen, webOS, ПК и в браузере."
+        }
+      ]
+    }
+  ]
+}
